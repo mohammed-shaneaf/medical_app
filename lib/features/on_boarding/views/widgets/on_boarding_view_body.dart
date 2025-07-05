@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:medical_project/core/utils/custom_button.dart';
 import 'package:medical_project/features/on_boarding/views/widgets/build_doctor_image.dart';
+import 'package:medical_project/features/on_boarding/views/widgets/on_boarding_text_desciptation.dart';
 import 'package:medical_project/features/on_boarding/views/widgets/on_boarding_top_section.dart';
 
 class OnBoardingViewBody extends StatelessWidget {
@@ -22,18 +23,6 @@ class OnBoardingViewBody extends StatelessWidget {
           CustomButton(text: 'Get Started', onPressed: () {}),
         ],
       ),
-    );
-  }
-}
-
-class OnBoardingTextDescription extends StatelessWidget {
-  const OnBoardingTextDescription({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
-      textAlign: TextAlign.center,
     );
   }
 }
