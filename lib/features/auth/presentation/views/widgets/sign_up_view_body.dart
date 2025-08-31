@@ -6,8 +6,8 @@ import 'package:medical_project/core/theme/app_colors.dart';
 import 'package:medical_project/core/theme/app_styles.dart';
 import 'package:medical_project/core/utils/custom_button.dart';
 
-class SignInViewBody extends StatelessWidget {
-  const SignInViewBody({super.key});
+class SignUpViewBody extends StatelessWidget {
+  const SignUpViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -47,23 +47,21 @@ class SignInViewBody extends StatelessWidget {
             ],
           ),
           32.verticalSpace,
-          CustomButton(text: 'Login', onPressed: () {}),
+          CustomButton(text: 'Create Account', onPressed: () {}),
           16.verticalSpace,
-          2.horizontalSpace,
           GestureDetector(
             onTap: () {},
             child: GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, RouterName.signup);
+                Navigator.pushNamed(context, RouterName.signin);
               },
-
               child: Text.rich(
                 TextSpan(
                   text: 'Don\'t have an account? ',
                   style: AppStyles.f16normal,
                   children: [
                     TextSpan(
-                      text: 'Sign Up',
+                      text: 'Sign in',
                       style: AppStyles.f16normal.copyWith(
                         color: AppColors.primaryColor,
                       ),
