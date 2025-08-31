@@ -24,7 +24,7 @@ class SignUpViewBody extends StatelessWidget {
           ),
           8.verticalSpace,
           Text(
-            'We are excited to have you back, cant wait to see what you have been up to since you last logged in.',
+            'Sign up now and start exploring all that our app has to offer. We re excited to welcome you to our community!',
             style: AppStyles.f16normal,
           ),
           36.verticalSpace,
@@ -33,7 +33,7 @@ class SignUpViewBody extends StatelessWidget {
           CustomTextFormField(hintText: 'Password', obscureText: true),
           16.verticalSpace,
           IntlPhoneField(
-            initialCountryCode: 'syria',
+            initialCountryCode: 'SY',
             decoration: InputDecoration(
               fillColor: AppColors.grayColor,
               filled: true,
@@ -50,21 +50,7 @@ class SignUpViewBody extends StatelessWidget {
               ),
             ),
           ),
-          Row(
-            // mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Checkbox(value: false, onChanged: (value) {}),
-              Text('Remember me', style: AppStyles.f16normal),
 
-              const Spacer(),
-              Text(
-                'Forgot Password?',
-                style: AppStyles.f16normal.copyWith(
-                  color: AppColors.primaryColor,
-                ),
-              ),
-            ],
-          ),
           32.verticalSpace,
           CustomButton(text: 'Create Account', onPressed: () {}),
           16.verticalSpace,

@@ -38,10 +38,15 @@ class SignInViewBody extends StatelessWidget {
               Text('Remember me', style: AppStyles.f16normal),
 
               const Spacer(),
-              Text(
-                'Forgot Password?',
-                style: AppStyles.f16normal.copyWith(
-                  color: AppColors.primaryColor,
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, RouterName.forgotPassword);
+                },
+                child: Text(
+                  'Forgot Password?',
+                  style: AppStyles.f16normal.copyWith(
+                    color: AppColors.primaryColor,
+                  ),
                 ),
               ),
             ],
