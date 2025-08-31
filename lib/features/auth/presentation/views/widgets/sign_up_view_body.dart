@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_intl_phone_field/flutter_intl_phone_field.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:medical_project/common/widgets/custom_text_form_field.dart';
 import 'package:medical_project/core/routing/router_name.dart';
@@ -18,7 +19,7 @@ class SignUpViewBody extends StatelessWidget {
         children: [
           50.verticalSpace,
           Text(
-            'Welcome Back',
+            'Create Account',
             style: AppStyles.f32bold.copyWith(color: AppColors.primaryColor),
           ),
           8.verticalSpace,
@@ -31,6 +32,24 @@ class SignUpViewBody extends StatelessWidget {
           16.verticalSpace,
           CustomTextFormField(hintText: 'Password', obscureText: true),
           16.verticalSpace,
+          IntlPhoneField(
+            initialCountryCode: 'syria',
+            decoration: InputDecoration(
+              fillColor: AppColors.grayColor,
+              filled: true,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16.r),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16.r),
+                borderSide: const BorderSide(color: Colors.grey),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16.r),
+                borderSide: BorderSide(color: Theme.of(context).primaryColor),
+              ),
+            ),
+          ),
           Row(
             // mainAxisAlignment: MainAxisAlignment.start,
             children: [
