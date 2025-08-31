@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:medical_project/core/routing/router_name.dart';
 import 'package:medical_project/core/utils/custom_button.dart';
 import 'package:medical_project/features/on_boarding/views/widgets/build_doctor_image.dart';
 import 'package:medical_project/features/on_boarding/views/widgets/on_boarding_top_section.dart';
@@ -19,7 +20,12 @@ class OnBoardingViewBody extends StatelessWidget {
           18.verticalSpace,
           OnBoardingTextDescription(),
           32.verticalSpace,
-          CustomButton(text: 'Get Started', onPressed: () {}),
+          CustomButton(
+            text: 'Get Started',
+            onPressed: () {
+              Navigator.pushNamed(context, RouterName.signin);
+            },
+          ),
         ],
       ),
     );
