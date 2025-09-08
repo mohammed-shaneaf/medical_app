@@ -11,6 +11,7 @@ class MedicalApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       child: MaterialApp(
+        
         debugShowCheckedModeBanner: false,
         onGenerateRoute: ongenerateroute,
         initialRoute: RouterName.onBoardingView,
