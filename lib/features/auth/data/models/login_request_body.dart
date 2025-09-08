@@ -10,4 +10,6 @@ class LoginRequestBody {
   LoginRequestBody({required this.email, required this.password});
 
   Map<String, dynamic> toJson() => _$LoginRequestBodyToJson(this);
+
+  // there isn't form json because it's a post request
 }
