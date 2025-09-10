@@ -10,4 +10,10 @@ abstract class AppStyles {
     fontSize: 16,
     fontWeight: FontWeight.normal,
   );
+
+  static TextStyle font13DarkBlueRegular = const TextStyle(
+    fontSize: 13,
+    color: Color(0xFF1E2A32),
+    fontWeight: FontWeight.w400,
+  );
 }
