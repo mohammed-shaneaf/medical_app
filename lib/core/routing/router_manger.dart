@@ -6,6 +6,7 @@ import 'package:medical_project/features/auth/presentation/logic/manager/login_c
 import 'package:medical_project/features/auth/presentation/views/forgot_password_view.dart';
 import 'package:medical_project/features/auth/presentation/views/sign_in_view.dart';
 import 'package:medical_project/features/auth/presentation/views/sign_up_view.dart';
+import 'package:medical_project/features/home/presentation/views/home_view.dart';
 import 'package:medical_project/features/on_boarding/views/on_boarding_view.dart';
 
 MaterialPageRoute ongenerateroute(RouteSettings settings) {
@@ -26,6 +27,9 @@ MaterialPageRoute ongenerateroute(RouteSettings settings) {
 
     case RouterName.forgotPassword:
       return MaterialPageRoute(builder: (_) => const ForgotPasswordView());
+
+    case RouterName.home:
+      return MaterialPageRoute(builder: (_) => const HomeView());
     default:
       return MaterialPageRoute(
         builder: (_) => Scaffold(

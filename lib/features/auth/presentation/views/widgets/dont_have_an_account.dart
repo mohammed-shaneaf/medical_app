@@ -10,7 +10,7 @@ class DontHaveAnAccount extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, RouterName.signin);
+        Navigator.pushNamed(context, RouterName.signup);
       },
       child: Text.rich(
         TextSpan(
@@ -18,7 +18,7 @@ class DontHaveAnAccount extends StatelessWidget {
           style: AppStyles.f16normal,
           children: [
             TextSpan(
-              text: 'Sign in',
+              text: 'Sign up',
               style: AppStyles.f16normal.copyWith(
                 color: AppColors.primaryColor,
               ),

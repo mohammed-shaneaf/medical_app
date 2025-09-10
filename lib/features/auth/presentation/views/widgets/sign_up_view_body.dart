@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:medical_project/common/widgets/custom_text_form_field.dart';
 import 'package:medical_project/core/utils/custom_button.dart';
 import 'package:medical_project/features/auth/presentation/views/widgets/create_account_widget.dart';
-import 'package:medical_project/features/auth/presentation/views/widgets/dont_have_an_account.dart';
+import 'package:medical_project/features/auth/presentation/views/widgets/have_an_account.dart';
 import 'package:medical_project/features/auth/presentation/views/widgets/phone_text_field.dart';
 
 class SignUpViewBody extends StatelessWidget {
@@ -25,7 +25,7 @@ class SignUpViewBody extends StatelessWidget {
           32.verticalSpace,
           CustomButton(text: 'Create Account', onPressed: () {}),
           30.verticalSpace,
-          DontHaveAnAccount(),
+          HaveAnAccount(),
           16.verticalSpace,
         ],
       ),

@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:medical_project/features/auth/presentation/views/widgets/sign_in_view_body.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:medical_project/core/di/depedency_injection.dart';
+import 'package:medical_project/features/auth/data/repos/login_repo.dart';
+import 'package:medical_project/features/auth/presentation/logic/manager/login_cubit/login_cubit.dart';
+import 'package:medical_project/features/auth/presentation/views/widgets/sign_in_view_body_bloc_lisnter.dart';
 
 class SignInView extends StatelessWidget {
   const SignInView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SafeArea(child: const SignInViewBody()));
+    return BlocProvider(
+      create: (_) => LoginCubit(getIt<LoginRepo>()),
+      child: const Scaffold(
+        body: SafeArea(child: SignInViewBodyBlocListener()),
+      ),
+    );
   }
 }
