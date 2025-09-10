@@ -3,23 +3,22 @@ import 'package:medical_project/core/routing/router_name.dart';
 import 'package:medical_project/core/theme/app_colors.dart';
 import 'package:medical_project/core/theme/app_styles.dart';
 
-class DontHaveAccountWidget extends StatelessWidget {
-  const DontHaveAccountWidget({super.key});
+class DontHaveAnAccount extends StatelessWidget {
+  const DontHaveAnAccount({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, RouterName.signup);
+        Navigator.pushNamed(context, RouterName.signin);
       },
-
       child: Text.rich(
         TextSpan(
           text: 'Don\'t have an account? ',
           style: AppStyles.f16normal,
           children: [
             TextSpan(
-              text: 'Sign Up',
+              text: 'Sign in',
               style: AppStyles.f16normal.copyWith(
                 color: AppColors.primaryColor,
               ),

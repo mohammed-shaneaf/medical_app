@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:medical_project/core/utils/custom_button.dart';
-import 'package:medical_project/features/auth/presentation/views/widgets/dont_have_account_widget.dart';
 import 'package:medical_project/features/auth/presentation/views/widgets/email_and_password_widget.dart';
+import 'package:medical_project/features/auth/presentation/views/widgets/have_an_account.dart';
 import 'package:medical_project/features/auth/presentation/views/widgets/password_widget.dart';
 import 'package:medical_project/features/auth/presentation/views/widgets/welcome_widget.dart';
 
@@ -21,8 +21,8 @@ class SignInViewBody extends StatelessWidget {
             EmailAndPasswordWidget(),
             ForgotPasswordWidget(),
             CustomButton(text: 'Login', onPressed: () {}),
-            16.verticalSpace,
-            DontHaveAccountWidget(),
+            30.verticalSpace,
+            HaveAnAccount(),
           ],
         ),
       ),

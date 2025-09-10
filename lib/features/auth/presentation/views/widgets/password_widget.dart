@@ -22,7 +22,7 @@ class ForgotPasswordWidget extends StatelessWidget {
             style: AppStyles.f16normal.copyWith(color: AppColors.primaryColor),
           ),
         ),
-        32.verticalSpace,
+        45.verticalSpace,
       ],
     );
   }
