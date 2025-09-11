@@ -1,0 +1,20 @@
+// .vscode/launch.json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "medical app (development)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main_development.dart",
+      "args": ["--flavor", "developer", "--dart-define=FLAVOR=developer"]
+    },
+    {
+      "name": "medical app (production)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main_production.dart",
+      "args": ["--flavor", "production", "--dart-define=FLAVOR=production"]
+    }
+  ]
+}
